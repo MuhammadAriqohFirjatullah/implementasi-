@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Introduction to Machine Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">ML</span><span>ML Explorer</span></a>
+    <span class="tag">Demo pembelajaran</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">INTRODUCTION TO MACHINE LEARNING</p>
+      <h1>Belajar dari data,<br><span>mengenali pola.</span></h1>
+      <p class="intro">Machine Learning (ML) memungkinkan komputer mempelajari pola dari data untuk membuat prediksi atau mengelompokkan informasi.</p>
+      <a href="#playground" class="primary-btn">Coba simulasi <span>↓</span></a>
+    </section>
+
+    <section class="concept-grid" aria-label="Jenis machine learning">
+      <article class="concept-card">
+        <div class="symbol purple">01</div>
+        <h2>Supervised Learning</h2>
+        <p>Belajar dari data yang memiliki label untuk memprediksi hasil, misalnya memperkirakan harga rumah.</p>
+      </article>
+      <article class="concept-card">
+        <div class="symbol blue">02</div>
+        <h2>Unsupervised Learning</h2>
+        <p>Mencari pola atau kelompok pada data tanpa label, misalnya mengelompokkan pelanggan.</p>
+      </article>
+      <article class="concept-card">
+        <div class="symbol orange">03</div>
+        <h2>Reinforcement Learning</h2>
+        <p>Belajar melalui tindakan dan umpan balik berupa reward atau penalti.</p>
+      </article>
+    </section>
+
+    <section id="playground" class="playground">
+      <div class="section-title">
+        <p class="eyebrow">INTERACTIVE PLAYGROUND</p>
+        <h2>Simulasi prediksi sederhana</h2>
+        <p>Atur jumlah jam belajar. Model contoh akan memperkirakan nilai berdasarkan aturan sederhana.</p>
+      </div>
+
+      <div class="simulator">
+        <div class="control-panel">
+          <label for="hours">Jam belajar per hari</label>
+          <div class="range-value"><strong id="hoursValue">3 jam</strong><span>1–8 jam</span></div>
+          <input id="hours" type="range" min="1" max="8" value="3" step="1">
+          <div class="range-labels"><span>1 jam</span><span>8 jam</span></div>
+          <button id="predictBtn" class="primary-btn full">Prediksi nilai</button>
+          <p class="small-note">Ini simulasi edukasi, bukan model ML yang dilatih dengan dataset nyata.</p>
+        </div>
+
+        <div class="result-panel" aria-live="polite">
+          <p class="result-label">PERKIRAAN NILAI</p>
+          <div class="score-line"><strong id="score">65</strong><span>/ 100</span></div>
+          <div class="meter"><div id="meterFill" class="meter-fill"></div></div>
+          <p id="resultMessage" class="result-message">Dengan 3 jam belajar, model memperkirakan nilai 65.</p>
+          <div class="formula">
+            <span>Aturan simulasi</span>
+            <code>Nilai = 45 + (jam × 7)</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow">
+      <div>
+        <p class="eyebrow">ALUR MACHINE LEARNING</p>
+        <h2>Dari data menjadi prediksi</h2>
+      </div>
+      <div class="steps">
+        <article><span>1</span><div><h3>Kumpulkan data</h3><p>Siapkan contoh data yang relevan.</p></div></article>
+        <article><span>2</span><div><h3>Latih model</h3><p>Algoritma mempelajari pola dari data.</p></div></article>
+        <article><span>3</span><div><h3>Evaluasi</h3><p>Ukur performa model menggunakan data uji.</p></div></article>
+        <article><span>4</span><div><h3>Prediksi</h3><p>Gunakan model untuk data baru.</p></div></article>
+      </div>
+    </section>
+
+    <section class="note">
+      <span class="note-icon">i</span>
+      <div><strong>Hal yang perlu diingat</strong><p>Hasil machine learning bergantung pada kualitas data, pemilihan algoritma, dan evaluasi yang tepat. Hubungan jam belajar dengan nilai pada halaman ini hanya aturan ilustratif.</p></div>
+    </section>
+  </main>
+  <footer>Introduction to Machine Learning · Demo HTML, CSS, dan JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>

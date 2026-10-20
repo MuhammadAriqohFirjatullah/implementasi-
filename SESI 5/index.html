@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Human-Computer Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">H</span><span>HCI Demo</span></div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">🌙 Mode gelap</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">HUMAN-COMPUTER INTERACTION</p>
+      <h1>Antarmuka yang mudah<br><span>dipahami semua orang.</span></h1>
+      <p class="hero-copy">Contoh sederhana penerapan HCI melalui desain yang jelas, konsisten, responsif, dan memberikan umpan balik kepada pengguna.</p>
+      <a class="primary-link" href="#demo">Coba interaksi <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="principles" aria-label="Prinsip HCI">
+      <article class="principle-card">
+        <div class="icon">◉</div>
+        <h2>Jelas</h2>
+        <p>Label dan instruksi dibuat mudah dipahami.</p>
+      </article>
+      <article class="principle-card">
+        <div class="icon">✓</div>
+        <h2>Konsisten</h2>
+        <p>Warna, tombol, dan tata letak digunakan secara konsisten.</p>
+      </article>
+      <article class="principle-card">
+        <div class="icon">↻</div>
+        <h2>Umpan balik</h2>
+        <p>Pengguna mendapat respons setelah melakukan tindakan.</p>
+      </article>
+    </section>
+
+    <section class="demo-section" id="demo">
+      <div class="section-heading">
+        <p class="eyebrow">DEMO INTERAKTIF</p>
+        <h2>Formulir umpan balik</h2>
+        <p>Isi formulir berikut untuk mencoba interaksi pengguna dengan sistem.</p>
+      </div>
+
+      <div class="demo-grid">
+        <form class="feedback-form" id="feedbackForm">
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" placeholder="Masukkan nama Anda" required minlength="2">
+          <small class="hint">Minimal 2 karakter.</small>
+
+          <label for="rating">Seberapa mudah halaman ini digunakan?</label>
+          <select id="rating" name="rating" required>
+            <option value="">Pilih penilaian</option>
+            <option value="Sangat mudah">Sangat mudah</option>
+            <option value="Mudah">Mudah</option>
+            <option value="Cukup mudah">Cukup mudah</option>
+            <option value="Sulit">Sulit</option>
+          </select>
+
+          <label for="comment">Saran (opsional)</label>
+          <textarea id="comment" name="comment" rows="3" placeholder="Tulis saran Anda..."></textarea>
+
+          <button class="submit-btn" type="submit">Kirim umpan balik</button>
+          <p class="privacy-note">Demo ini tidak mengirim data ke server. Data hanya ditampilkan di halaman.</p>
+        </form>
+
+        <aside class="feedback-result" aria-live="polite">
+          <div class="result-icon" id="resultIcon">✦</div>
+          <h3 id="resultTitle">Respons sistem</h3>
+          <p id="resultText">Setelah formulir dikirim, sistem akan menampilkan pesan konfirmasi di sini.</p>
+          <div class="result-details" id="resultDetails" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="principles takeaway">
+      <div>
+        <p class="eyebrow">PENERAPAN HCI</p>
+        <h2>Mengapa desain ini membantu?</h2>
+      </div>
+      <ul>
+        <li>Label formulir menjelaskan informasi yang perlu diisi.</li>
+        <li>Validasi mencegah masukan yang belum lengkap.</li>
+        <li>Pesan konfirmasi memberi umpan balik setelah tindakan.</li>
+        <li>Tata letak responsif menyesuaikan layar ponsel dan komputer.</li>
+        <li>Tombol mode gelap memberi kontrol kepada pengguna.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Demo pembelajaran HCI · HTML, CSS, dan JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
